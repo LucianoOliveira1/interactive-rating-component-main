@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+.card{
+    display: block;
+    background-color: hsl(213, 19%, 18%);
+    color: white;
+    border-radius: 20px;
+    width: min(95%, 360px);
+    padding: 25px;
+    margin: auto;  
+}
+
+.star{
+    border-radius: 50%;
+    background-color: hsl(217, 10%, 25%);
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.stars_container{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+.content_container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    margin-bottom: 25px;
+}
+.h1{
+    font-size: 24px;
+    font-weight: 600;
+}
+.information{
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 22px;
+    color: hsl(217, 12%, 63%);
+}
+ul li{
+    display: inline-flex;
+    list-style: none;
+    align-items: center;
+}
+input:hover{
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+    cursor: pointer;
+}
+
+input:focus{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+input{
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    border: none;
+    margin: 0px 5px 0px 8px;
+    font-size: 14px;
+    background-color: hsl(214, 11%, 24%);
+    color: hsl(217, 12%, 63%);
+    font-weight: 600;
+}
+
+.btn_submit{
+    width: min(100%, 330px);
+    height: 45px;
+    border-radius: 40px;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 400;
+    align-self: center;
+    border: none;
+}
+.btn_submit:hover{
+    background-color: hsl(25, 88%, 35%);
+    cursor: pointer;
+}
+.btn_submit:active{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+.thanks_state{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+}
+.thanks_image{
+    margin-top: 15px;
+}
+.thanks_state{
+    display: none;
+}
+#counter{
+    background-color: hsl(214, 18%, 23%);
+    border-radius: 40px;
+    width: 70%;
+    color: hsl(25, 97%, 53%);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+.counter_result{
+    margin: 5px auto 2px auto;
+    padding: 0px;
+}
+h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+.message_thanks{
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: hsl(217, 12%, 63%);
+    margin-bottom: 10px;
+}

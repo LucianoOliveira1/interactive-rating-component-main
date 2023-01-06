@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon-32x32.png" type="imagem/png">
+  <link rel="stylesheet" href="style.css">
+  <title>Rating Component</title>
+</head>
+<body>
+  <section class="rating_state card">
+      <div class="stars_container">
+        <img src="images/icon-star.svg" alt="star" class="star">
+      </div>
+          <form class="content_container">
+            <label for="h1" class="h1">How did we do?</label>
+            <label for="p" class="information">Please let us know how we did with your support request. All feedback is appreciated 
+              to help us improve our offering!</label>
+              <div class="btns">
+                <input type="button" value="1">
+                <input type="button" value="2">
+                <input type="button" value="3">
+                <input type="button" value="4">
+                <input type="button" value="5">
+              </div>
+          </form>
+          <button type="submit" class="btn_submit" onclick="submit_rate()">Submit</button>
+  </section>
+  <section class="thanks_state card hide">
+    <img class="thanks_image" src="images/illustration-thank-you.svg" alt="">
+    <div id="counter">
+    </div>
+    <h2>Thank you!</h2>
+    <p class="message_thanks"> We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</p>
+  </section>  
+  <script src="script.js"></script>
+</body>
+</html>
